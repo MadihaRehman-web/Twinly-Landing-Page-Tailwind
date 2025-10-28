@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+@theme {
+  --color-primary: #0f5265;
+  --font-Lato: "Lato";
+}
