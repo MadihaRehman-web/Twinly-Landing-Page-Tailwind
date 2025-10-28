@@ -12,23 +12,105 @@
     <link href="./src/output.css" rel="stylesheet" />
     <title>Twinly</title>
   </head>
-  <body>
-    <nav class="bg-primary font-Lato flex py-6 px-13 justify-between">
+  <body class="bg-primary">
+    <nav class="bg-primary font-Lato flex py-6 px-18 justify-between">
       <div class="flex gap-x-2 items-center text-white text-xl font-semibold">
-        <img src="./assets/brand-logo.png" alt="Twinly logo" />
+        <img src="./assets/header-img/brand-logo.png" alt="Twinly logo" />
         <p class="text-2xl">Twinly</p>
       </div>
-      <ul class="flex gap-x-10 text-sm text-white pt-3">
+      <ul class="flex gap-x-10 text-sm text-white pt-4 pr-22">
         <li><a href="#">Home</a></li>
         <li><a href="#">Features</a></li>
         <li><a href="#">Blog</a></li>
         <li><a href="#">Partners</a></li>
       </ul>
       <button
-        class="text-sm text-white rounded-xl font-Lato font-medium py-3 px-6 bg-primary border-1 border-black cursor-pointer"
+        class="text-sm text-white rounded-xl font-Lato font-medium py-3 px-6 bg-primary cursor-pointer relative top-6 right-0 z-1"
       >
         Book Demo
       </button>
     </nav>
+    <main>
+      <section
+        class="grid grid-cols-2 bg-primary text-white font-Lato pl-22 pr-10"
+      >
+        <div class="pt-15">
+          <div>
+            <h1 class="text-3xl font-bold">Your AI-Powered Legal Assistant</h1>
+            <h2 class="text-2xl font-normal leading-16">
+              Unlock Seamless Client Engagement
+            </h2>
+            <p class="text-lg font-normal text-[#f3f3f3] leading-7.5">
+              Welcome to Twinly.ai, where innovation meets legal excellence.
+              Supercharge your online presence and client interactions with our
+              cutting-edge AI bot designed exclusively for legal professionals.
+            </p>
+          </div>
+
+          <div class="flex my-12 gap-x-2">
+            <div class="h-25 w-16">
+              <img
+                src="./assets/hero-section-img/hand-bulb.png"
+                alt=""
+                class="h-26 w-15"
+              />
+            </div>
+
+            <div class="flex flex-col gap-y-4">
+              <h2 class="font-medium text-2xl leading-8 pl-1">
+                Sales Cycle Trained
+              </h2>
+              <p class="font-medium text-base leading-7">
+                Never miss a potential client, and convert leads into loyal
+                clientele with a seamlessly guided sales journey.
+              </p>
+              <div class="flex gap-x-1.5 pl-1">
+                <div class="h-[9px] w-1 bg-[#B1B1B1]"></div>
+                <div class="h-[9px] w-1 bg-[#B1B1B1]"></div>
+                <div class="h-[9px] w-1 bg-[#B1B1B1]"></div>
+                <div class="h-[9px] w-1 bg-[#B1B1B1]"></div>
+                <div class="h-[9px] w-1 bg-[#B1B1B1]"></div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <button
+              class="text-base text-[#4D4D4D] rounded-xl font-Lato font-bold ml-3 py-3 px-6 border cursor-pointer shadow-[0_2.188rem_3.688rem_0.125rem_rgba(0,0,0,0.5)] bg-lineat bg-[radial-gradient(circle_at_top,white,#eec161)]"
+            >
+              Try scheduling
+            </button>
+          </div>
+        </div>
+        <div
+          class="flex items-end bg-[#E8E8E8] rounded-3xl absolute top-9 right-9"
+        >
+          <img
+            src="./assets/hero-section-img/mobile-phone.png"
+            alt="mobile phone"
+          />
+          <div class="flex flex-col gap-y-5 pb-6">
+            <p class="text-black text-sm pl-2 relative -left-15 text-semibold">
+              Explore our latest features
+            </p>
+            <button
+              class="text-sm font-normal leading-4.5 rounded-3xl py-3 px-2 bg-white text-black cursor-pointer relative -left-12 shadow-[0px_5px_4px_-2px_rgba(0,0,0,0.3)]"
+            >
+              🚀 Elevate Your Practice
+            </button>
+            <button
+              class="-left-23 relative text-sm font-normal leading-4.5 rounded-3xl py-3 px-2 bg-white text-black cursor-pointer shadow-[0px_5px_4px_-2px_rgba(0,0,0,0.3)]"
+            >
+              🌐 Integration Made Easy
+            </button>
+            <button
+              class="relative -left-8 text-sm font-normal leading-4.5 rounded-3xl py-3 px-2 bg-white text-black cursor-pointer shadow-[0px_5px_4px_-2px_rgba(0,0,0,0.3)]"
+            >
+              🔒 Secure and Compliant
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

@@ -2,5 +2,23 @@
 
 @theme {
   --color-primary: #0f5265;
-  --font-Lato: "Lato";
+}
+
+@layer base {
+  body {
+    font-family: "Lato";
+  }
+}
+
+@layer utilities {
+  .btn-primary {
+    font-size: 16px;
+    border-radius: 12px;
+    color: #4d4d4d;
+    font-weight: 700;
+    padding-inline: 1.5rem;
+    padding-block: 0.75rem;
+    cursor: pointer;
+    box-shadow: 0 2.188rem 3.688rem 0.125rem rgba(0, 0, 0, 0.5);
+  }
 }
