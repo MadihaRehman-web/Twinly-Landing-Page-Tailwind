@@ -2,6 +2,7 @@
 
 @theme {
   --color-primary: #0f5265;
+  --breakpoint-2xl: 87.5rem;
 }
 
 @layer base {

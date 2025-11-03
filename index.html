@@ -20,34 +20,44 @@
     <title>Twinly</title>
   </head>
   <body>
-    <nav class="bg-primary font-Lato flex py-6 px-18 justify-between">
+    <nav class="bg-primary font-Lato flex py-6 px-8 lg:px-18 justify-between">
       <div class="flex gap-x-2 items-center text-white text-xl font-semibold">
         <img src="./assets/header/brand-logo.png" alt="Twinly logo" />
         <p class="text-2xl">Twinly</p>
       </div>
-      <ul class="flex gap-x-10 text-sm text-white pt-4 pr-22">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Partners</a></li>
-      </ul>
-      <button
-        class="text-sm text-white rounded-xl font-Lato font-medium py-3 px-6 bg-primary cursor-pointer relative top-6 right-0 z-1"
-      >
-        Book Demo
-      </button>
+      <div class="hidden md:flex w-[68%] lg:w-[70%] xl:w-[65%] justify-between">
+        <ul class="flex gap-x-10 text-sm text-white pt-4">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Partners</a></li>
+        </ul>
+        <button
+          class="text-sm border border-white lg:border-0 text-white rounded-xl font-Lato font-medium py-3 px-6 bg-primary cursor-pointer lg:relative lg:-right-3 lg:top-6 z-1"
+        >
+          Book Demo
+        </button>
+      </div>
+      <div class="block md:hidden text-3xl text-white cursor-pointer">
+        <i class="fa-solid fa-bars"></i>
+      </div>
     </nav>
     <main>
+      <!-- Hero section  -->
       <section
-        class="grid grid-cols-2 bg-primary text-white font-Lato pl-22 pr-10"
+        class="flex flex-col lg:flex-row gap-20 bg-primary text-white font-Lato lg:pl-22 lg:pr-10 sm:px-13 px-8"
       >
-        <div class="pt-15">
-          <div>
-            <h1 class="text-3xl font-bold">Your AI-Powered Legal Assistant</h1>
-            <h2 class="text-2xl font-normal leading-16">
+        <div class="pt-15 w-full lg:w-4/7">
+          <div class="flex flex-col gap-3 sm:gap-0">
+            <h1 class="text-2xl sm:text-3xl font-bold">
+              Your AI-Powered Legal Assistant
+            </h1>
+            <h2 class="text-xl sm:text-2xl font-normal sm:leading-16">
               Unlock Seamless Client Engagement
             </h2>
-            <p class="text-lg font-normal text-[#f3f3f3] leading-7.5">
+            <p
+              class="text-base sm:text-lg font-normal text-[#f3f3f3] leading-7.5"
+            >
               Welcome to Twinly.ai, where innovation meets legal excellence.
               Supercharge your online presence and client interactions with our
               cutting-edge AI bot designed exclusively for legal professionals.
@@ -59,7 +69,7 @@
               <img
                 src="./assets/main/hero-section/hand-bulb.png"
                 alt=""
-                class="h-26 w-15"
+                class="sm:h-26 sm:w-15 h-15 w-15"
               />
             </div>
 
@@ -89,41 +99,55 @@
             </button>
           </div>
         </div>
+
         <div
-          class="flex items-end bg-[#E8E8E8] rounded-3xl absolute top-9 right-9"
+          class="flex flex-col 2xl:flex-row bg-[#E8E8E8] rounded-3xl lg:relative lg:-top-16 sm:w-2/3 w-full lg:w-3/7 mx-auto lg:mx-none"
         >
-          <img
-            src="./assets/main/hero-section/mobile-phone.png"
-            alt="mobile phone"
-          />
-          <div class="flex flex-col gap-y-5 pb-6">
-            <p class="text-black text-sm pl-2 relative -left-15 text-semibold">
+          <div class="w-full flex justify-center lg:w-none lg:justify-start">
+            <img
+              src="./assets/main/hero-section/mobile-phone.png"
+              alt="mobile phone"
+              class="lg:mt-5 2xl:mt-0"
+            />
+          </div>
+          <div
+            class="flex flex-col gap-y-5 pb-6 2xl:absolute 2xl:bottom-0 2xl:right-5 px-10 2xl:px-0"
+          >
+            <p class="text-black text-sm pl-2 text-semibold self-center">
               Explore our latest features
             </p>
             <button
-              class="text-sm font-normal leading-4.5 rounded-3xl py-3 px-2 bg-white text-black relative -left-12 shadow-[0px_5px_4px_-2px_rgba(0,0,0,0.3)]"
+              class="text-sm max-w-max font-normal leading-4.5 rounded-3xl py-3 px-2 bg-white text-black shadow-[0px_5px_4px_-2px_rgba(0,0,0,0.3)] self-start"
             >
               🚀 Elevate Your Practice
             </button>
             <button
-              class="-left-23 relative text-sm font-normal leading-4.5 rounded-3xl py-3 px-2 bg-white text-black shadow-[0px_5px_4px_-2px_rgba(0,0,0,0.3)]"
+              class="text-sm max-w-max font-normal leading-4.5 rounded-3xl py-3 px-2 bg-white text-black shadow-[0px_5px_4px_-2px_rgba(0,0,0,0.3)] self-end"
             >
               🌐 Integration Made Easy
             </button>
             <button
-              class="relative -left-8 text-sm font-normal leading-4.5 rounded-3xl py-3 px-2 bg-white text-black shadow-[0px_5px_4px_-2px_rgba(0,0,0,0.3)]"
+              class="text-sm max-w-max font-normal leading-4.5 rounded-3xl py-3 px-2 bg-white text-black shadow-[0px_5px_4px_-2px_rgba(0,0,0,0.3)] self-center"
             >
               🔒 Secure and Compliant
             </button>
           </div>
         </div>
       </section>
-      <section class="bg-primary px-15 pt-29">
-        <h1 class="font-bold text-4xl leading-16 text-center text-white mb-8">
+      <!-- About section  -->
+      <section class="bg-primary px-2 sm:px-10 md:px-15 pt-29">
+        <h1
+          class="font-bold sm:text-4xl text-3xl leading-16 text-center text-white mb-8"
+        >
           What is Twinly.ai?
         </h1>
-        <div class="grid grid-cols-[2fr_1fr_2fr_3fr] grid-rows-2 gap-5">
-          <div class="bg-[#E8E8E8] rounded-2xl p-7 flex flex-col gap-3">
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-[2fr_1fr_2fr_3fr] xl:grid-rows-2 gap-5"
+        >
+          <div
+            class="bg-[#E8E8E8] rounded-2xl px-3 py-5 sm:p-7 flex flex-col gap-3"
+          >
             <h2 class="font-bold text-2xl leading-7">
               Your Always-On Virtual Assistant
             </h2>
@@ -131,7 +155,7 @@
               Twinly.ai serves as your 24/7 virtual assistant, actively
               converting leads and ensuring no opportunity is missed.
             </p>
-            <div class="self-end mt-auto">
+            <div class="self-end xl:mt-auto">
               <img
                 src="./assets/main/About-section/grid-cell-1.png"
                 alt="24/7"
@@ -140,7 +164,7 @@
           </div>
 
           <div
-            class="col-span-2 bg-[#E8E8E8] rounded-2xl p-7 flex flex-col gap-4"
+            class="md:col-span-2 bg-[#E8E8E8] rounded-2xl px-3 py-5 sm:p-7 flex flex-col gap-4"
           >
             <h2 class="font-bold text-2xl leading-7">
               Organized Lead Management Hub
@@ -150,7 +174,7 @@
               management, keeping your leads organized and insights at your
               fingertips.
             </p>
-            <div class="bg-white p-4 flex flex-col gap-3 m-auto">
+            <div class="bg-white p-4 flex flex-col gap-3 mx-auto xl:m-auto">
               <div class="flex justify-between">
                 <p class="font-semibold text-xl">Bot Name</p>
                 <i class="fa-solid fa-ellipsis text-[#ccc] text-2xl"></i>
@@ -192,7 +216,7 @@
           </div>
 
           <div
-            class="row-span-2 bg-[#E8E8E8] rounded-2xl p-8 flex flex-col gap-4"
+            class="md:col-span-3 md:row-span-1 xl:row-span-2 xl:col-span-1 bg-[#E8E8E8] rounded-2xl px-3 py-5 sm:p-7 flex flex-col gap-4"
           >
             <h2 class="font-bold text-2xl leading-7">
               Flexible & Personalized Engagement
@@ -203,7 +227,7 @@
               customization.
             </p>
             <div
-              class="bg-primary m-auto min-h-115 w-4/5 rounded-3xl py-10 flex flex-col items-center shadow-[0px_5px_4px_-2px_rgba(0,0,0,0.3)]"
+              class="bg-primary m-auto min-h-105 sm:min-h-115 w-3/4 rounded-3xl py-10 flex flex-col items-center shadow-[0px_5px_4px_-2px_rgba(0,0,0,0.3)]"
             >
               <div>
                 <img
@@ -211,10 +235,12 @@
                   alt="direct-picture"
                 />
               </div>
-              <p class="font-bold text-2xl text-white mt-4">
+              <p class="font-bold text-xl sm:text-2xl text-white mt-4">
                 Cameron Williamson
               </p>
-              <p class="font-light text-xl text-white">Criminal Lawyer</p>
+              <p class="font-light text-lg sm:text-xl text-white">
+                Criminal Lawyer
+              </p>
               <div class="mt-auto text-white flex gap-x-10 text-xl">
                 <i class="fa-regular fa-calendar-days"></i>
                 <i class="fa-regular fa-envelope"></i>
@@ -222,12 +248,14 @@
               </div>
             </div>
           </div>
-          <div class="col-span-2 bg-[#E8E8E8] rounded-2xl p-7 flex flex-col">
+          <div
+            class="md:col-span-2 bg-[#E8E8E8] rounded-2xl px-3 py-5 sm:p-7 flex flex-col"
+          >
             <h2 class="font-bold text-2xl leading-7">Statistics</h2>
             <p class="font-normal text-base leading-7 mt-4">
               Keep track of your business statistics.
             </p>
-            <div class="mt-auto">
+            <div class="mt-12 xl:mt-auto">
               <div class="relative">
                 <img
                   src="./assets/main/About-section/grid-cell-4-max.png"
@@ -255,20 +283,22 @@
               </div>
             </div>
           </div>
-          <div class="bg-[#E8E8E8] rounded-2xl p-7 flex flex-col gap-4">
+          <div
+            class="bg-[#E8E8E8] rounded-2xl px-3 py-5 sm:p-7 flex flex-col gap-4"
+          >
             <h2 class="font-bold text-2xl leading-7">AI in your control</h2>
             <p class="font-normal text-base leading-7">
               Disable AI anytime to personally engage, providing a seamless
               blend of automation and customization.
             </p>
-            <div class="mt-8 flex gap-2">
+            <div class="mt-8 flex flex-col 2xl:flex-row gap-2 m-auto">
               <button
-                class="text-white text-sm font-normal bg-primary py-1.5 px-3 rounded cursor-pointer"
+                class="text-white text-sm font-normal bg-primary py-1.5 px-3 rounded cursor-pointer w-38 2xl:max-w-max"
               >
                 Disable AI
               </button>
               <button
-                class="text-white text-sm font-normal bg-primary py-1.5 px-3 rounded cursor-pointer"
+                class="text-white text-sm font-normal bg-primary py-1.5 px-3 rounded cursor-pointer w-38 2xl:max-w-max"
               >
                 <i class="fa-regular fa-eye mr-1.5"></i>Preview Chatbot
               </button>
@@ -276,15 +306,18 @@
           </div>
         </div>
       </section>
-      <section class="bg-primary px-15 pt-29">
-        <h1 class="font-bold text-4xl leading-16 text-center text-white mb-8">
+      <!-- Purpose section  -->
+      <section class="bg-primary px-6 md:px-15 pt-20 sm:pt-29">
+        <h1
+          class="font-bold sm:text-4xl text-3xl sm:leading-16 leading-10 text-center text-white mb-8"
+        >
           Why you need Twinly.ai?
         </h1>
-        <div class="grid grid-cols-3 items-stretch gap-5">
+        <div class="grid xl:grid-cols-3 lg:grid-cols-2 items-stretch gap-5">
           <div
             class="bg-[#E8E8E8] rounded-3xl flex flex-col items-center text-center p-7 gap-y-2"
           >
-            <h2 class="leading-6 text-2xl font-bold">
+            <h2 class="leading-8 text-2xl font-bold">
               Unmatched Affordability
             </h2>
             <p class="leading-6.5 text-base font-normal">
@@ -294,7 +327,7 @@
               without the hefty price tag
             </p>
             <div
-              class="border-2 border-primary bg-white flex flex-col gap-5 pt-11 w-4/5 m-auto"
+              class="border-2 border-primary bg-white flex flex-col gap-5 pt-11 w-4/5 md:w-2/3 lg:w-4/5 mt-8 m-auto"
             >
               <span class="block text-8xl font-normal leading-25"
                 ><sup class="text-xl relative -top-16 -right-1 font-semibold"
@@ -312,7 +345,7 @@
                 $200 charged upon contract signing for technical integration.
               </p>
               <button
-                class="font-medium text-2xl text-white bg-primary w-full py-3 font-[Lato] cursor-pointer border-t-2 border-primary hover:bg-[#ebeaea] hover:text-primary"
+                class="font-medium text-xl sm:text-2xl text-white bg-primary w-full py-3 font-[Lato] cursor-pointer border-t-2 border-primary hover:bg-[#ebeaea] hover:text-primary"
               >
                 Get Started Now
               </button>
@@ -340,7 +373,7 @@
           <div
             class="bg-[#E8E8E8] rounded-3xl flex flex-col items-center text-center px-7 pt-7 gap-y-4"
           >
-            <h2 class="leading-6 text-2xl font-bold">
+            <h2 class="leading-8 text-2xl font-bold">
               Streamlined Lead Management
             </h2>
             <p class="leading-6.5 text-base font-normal">
@@ -356,10 +389,10 @@
             </div>
           </div>
           <div
-            class="col-span-3 bg-[#E8E8E8] rounded-3xl flex pl-15 py-14 pr-5 gap-x-2"
+            class="xl:col-span-3 text-center xl:text-left bg-[#E8E8E8] rounded-3xl flex xl:flex-row flex-col px-5 xl:pl-15 py-8 xl:py-14 pr-5 gap-15"
           >
             <div class="flex flex-col gap-y-5">
-              <h2 class="leading-6 text-2xl font-bold">
+              <h2 class="leading-8 text-2xl font-bold">
                 Insightful Lead Analysis:
               </h2>
               <p class="leading-6.5 text-base font-normal">
@@ -368,20 +401,28 @@
                 informed decisions. Elevate your legal practice by harnessing
                 the true potential of data-driven insights.
               </p>
-              <button class="btn-primary w-50 mt-4">Book Demo</button>
+              <button
+                class="btn-primary w-50 mt-2 mb-12 lg:mt-0 lg:mb-0 mx-auto xl:mx-0"
+              >
+                Book Demo
+              </button>
             </div>
             <img
               src="./assets/main/Purpose-section/grid-cell-4-graph.png"
               alt="total-lead-graph-img"
+              class="m-auto"
             />
           </div>
         </div>
       </section>
+      <!-- Working section  -->
       <section
-        class="flex flex-col items-center text-center px-10 pt-29 bg-primary"
+        class="flex flex-col items-center text-center px-6 md:px-10 pt-20 sm:pt-29 bg-primary"
       >
         <h1 class="leading-6 text-2xl font-bold text-white">How it works?</h1>
-        <p class="leading-8 text-base font-normal text-white px-20 pt-5">
+        <p
+          class="leading-8 text-base font-normal text-white px-5 md:px-20 pt-5"
+        >
           Twinly harnesses the power of advanced AI to seamlessly integrate into
           your legal practice. As potential clients engage, our 24/7 virtual
           assistant takes charge, actively converting leads with a sales
@@ -391,18 +432,23 @@
           efficient approach to client interactions, empowering your legal
           practice like never before.
         </p>
-        <div class="relative top-30">
+        <div class="relative top-15 lg:top-30">
           <video
             src="./assets/main/working/working-video-2.mp4"
-            class="w-5/6 rounded-2xl mx-auto cursor-pointer"
+            class="w-full md:w-5/6 rounded-2xl mx-auto cursor-pointer"
             controls
           ></video>
         </div>
       </section>
-      <section class="bg-[#D9D9D9] px-20 pt-75">
-        <div class="flex">
-          <div class="flex flex-col w-[40%] gap-13 m-auto">
-            <h1 class="font-normal text-[4rem] leading-20">
+      <!-- Growth section  -->
+      <section class="bg-[#D9D9D9] px-6 md:px-15 xl:px-20 pt-40 lg:pt-75">
+        <div class="flex flex-col lg:flex-row gap-y-10">
+          <div
+            class="flex flex-col w-full lg:w-[40%] gap-13 m-auto text-center lg:text-left"
+          >
+            <h1
+              class="font-normal text-4xl md:text-5xl 2xl:text-[4rem] leading-12 md:leading-20"
+            >
               We boost your growth as a successful Lawyer.
             </h1>
             <div>
@@ -410,7 +456,7 @@
             </div>
           </div>
           <div
-            class="grid grid-cols-[2fr_1fr_2fr] grid-rows-2 gap-8 w-[60%] place-items-center"
+            class="grid grid-cols-1 grid-rows-4 md:grid-cols-[2fr_1fr_2fr] md:grid-rows-2 w-full lg:w-[60%] place-items-center mt-12"
           >
             <div>
               <img
@@ -422,13 +468,17 @@
               class="flex bg-white px-5 pt-3 pb-1 rounded-2xl relative col-span-2"
             >
               <div class="pt-3">
-                <p class="font-semibold text-lg text-[#6C71A1]">Albert Flord</p>
-                <p class="font-bold text-xl text-[#2B3377]">
+                <p class="font-semibold text-base 2xl:text-lg text-[#6C71A1]">
+                  Albert Flord
+                </p>
+                <p class="font-bold text-lg 2xl:text-xl text-[#2B3377]">
                   Real Estate Lawyer
                 </p>
               </div>
               <div>
-                <button class="bg-primary text-white py-1 px-2 rounded text-xl">
+                <button
+                  class="bg-primary text-white py-1 px-2 rounded text-lg 2xl:text-xl"
+                >
                   Book Now
                 </button>
                 <img
@@ -444,19 +494,21 @@
               />
             </div>
             <div
-              class="col-span-2 flex bg-white px-5 pt-3 pb-1 rounded-2xl gap-x-10 relative"
+              class="col-span-2 flex bg-white px-5 pt-3 pb-1 rounded-2xl md:gap-x-10 relative"
             >
               <div class="pt-3">
-                <p class="font-semibold text-[1.4rem] text-[#6C71A1]">
+                <p
+                  class="font-semibold text-base 2xl:text-[1.4rem] text-[#6C71A1]"
+                >
                   Mark Anderson
                 </p>
-                <p class="font-bold text-[1.6rem] text-[#2B3377]">
+                <p class="font-bold text-lg 2xl:text-[1.6rem] text-[#2B3377]">
                   Corporate Lawyers
                 </p>
               </div>
               <div>
                 <button
-                  class="bg-primary text-white py-1 px-2 rounded text-2xl"
+                  class="bg-primary text-white py-1 px-2 rounded text-lg 2xl:text-2xl"
                 >
                   Book Now
                 </button>
@@ -478,10 +530,15 @@
           </div>
         </div>
       </section>
-      <section class="grid grid-cols-4 grid-rows-2 bg-[#D9D9D9] pt-50">
-        <div class="col-span-2 flex flex-col gap-y-5 my-auto pl-25">
+      <!-- Blog and News section  -->
+      <section
+        class="grid md:grid-cols-4 md:grid-rows-2 bg-[#D9D9D9] py-20 md:pt-50"
+      >
+        <div
+          class="col-span-2 flex flex-col gap-5 md:gap-2 items-center md:items-start lg:gap-5 pt-10 pb-18 md:py-2 lg:my-auto md:pl-5 lg:pl-25"
+        >
           <h1 class="font-bold text-[2rem] leading-12">Blog & News</h1>
-          <p class="font-normal leading-7">
+          <p class="font-normal leading-7 text-center md:text-start px-5">
             Are you looking for ways to increase conversions but <br />
             having a hard time turning visits into sales?
           </p>
@@ -499,114 +556,152 @@
         <img
           src="./assets/main/blog-section/blog-img-1.png"
           alt=""
-          class="w-full"
+          class="w-full h-full"
         />
         <img
           src="./assets/main/blog-section/blog-img-2.png"
           alt=""
-          class="w-full"
+          class="w-full h-full"
         />
         <img
           src="./assets/main/blog-section/blog-img-3.png"
           alt=""
-          class="w-full"
+          class="w-full h-full"
         />
         <img
           src="./assets/main/blog-section/blog-img-4.png"
           alt=""
-          class="w-full"
+          class="w-full h-full"
         />
         <img
           src="./assets/main/blog-section/blog-img-5.png"
           alt=""
-          class="w-full"
+          class="w-full h-full"
         />
         <img
           src="./assets/main/blog-section/blog-img-6.png"
           alt=""
-          class="w-full"
+          class="w-full h-full"
         />
       </section>
-      <section class="text-center bg-[#D9D9D9] py-25 flex flex-col">
+      <!-- Software list section  -->
+      <section class="text-center bg-[#D9D9D9] py-10 md:py-25 flex flex-col">
         <p class="text-[#0F5265] font-bold text-xl leading-6 my-3">
           Plug in and Go. No Fuss.
         </p>
-        <h1 class="font-bold text-[2.5rem] leading-12 my-2">
+        <h1 class="font-bold text-3xl sm:text-[2.5rem] leading-12 my-2">
           We Work with Your Software
         </h1>
-        <p class="font-normal text-base leading-7 px-30">
+        <p class="font-normal text-base leading-7 px-5 sm:px-15 md:px-30">
           Automatically keep track of calls, chats, and appointments across your
           tools. Sync effortlessly with 100+ platforms you already use. We make
           integration easy, so you can keep focusing on your law practice.
         </p>
         <div
-          class="grid grid-rows-3 grid-cols-5 place-items-center my-7 px-30 gap-5"
+          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 grid-flow-row place-items-center my-7 px-10 sm:px-20 md:px-30 gap-10"
         >
           <a href="#">
-            <img src="./assets/main/list-software-section/6.png" alt="" />
+            <img src="./assets/main/software-list-section/1.png" alt="lawcus" />
           </a>
           <a href="#">
-            <img src="./assets/main/list-software-section/7.png" alt="" />
+            <img
+              src="./assets/main/software-list-section/2.png"
+              alt="lawmatics"
+            />
           </a>
           <a href="#">
-            <img src="./assets/main/list-software-section/8.png" alt="" />
+            <img
+              src="./assets/main/software-list-section/3.png"
+              alt="calendly"
+            />
           </a>
           <a href="#">
-            <img src="./assets/main/list-software-section/3.png" alt="" />
+            <img
+              src="./assets/main/software-list-section/4.png"
+              alt="salesforce"
+            />
           </a>
           <a href="#">
-            <img src="./assets/main/list-software-section/4.png" alt="" />
+            <img src="./assets/main/software-list-section/5.png" alt="mycase" />
           </a>
           <a href="#">
-            <img src="./assets/main/list-software-section/1.png" alt="" />
+            <img
+              src="./assets/main/software-list-section/6.png"
+              alt="hubspot"
+            />
           </a>
           <a href="#">
-            <img src="./assets/main/list-software-section/2.png" alt="" />
+            <img src="./assets/main/software-list-section/7.png" alt="zapier" />
           </a>
           <a href="#">
-            <img src="./assets/main/list-software-section/5.png" alt="" />
+            <img src="./assets/main/software-list-section/8.png" alt="slack" />
           </a>
           <a href="#">
-            <img src="./assets/main/list-software-section/9.png" alt="" />
+            <img src="./assets/main/software-list-section/9.png" alt="Clio" />
           </a>
           <a href="#">
-            <img src="./assets/main/list-software-section/10.png" alt="" />
+            <img
+              src="./assets/main/software-list-section/10.png"
+              alt="actionstep"
+            />
           </a>
           <a href="#">
-            <img src="./assets/main/list-software-section/11.png" alt="" />
+            <img
+              src="./assets/main/software-list-section/11.png"
+              alt="actionstep"
+            />
           </a>
           <a href="#">
-            <img src="./assets/main/list-software-section/12.png" alt="" />
+            <img
+              src="./assets/main/software-list-section/12.png"
+              alt="microsoft-team"
+            />
           </a>
           <a href="#">
-            <img src="./assets/main/list-software-section/13.png" alt="" />
+            <img
+              src="./assets/main/software-list-section/13.png"
+              alt="headnote"
+            />
           </a>
           <a href="#">
-            <img src="./assets/main/list-software-section/14.png" alt="" />
+            <img
+              src="./assets/main/software-list-section/14.png"
+              alt="active-compaign"
+            />
           </a>
-          <a href="#">
-            <img src="./assets/main/list-software-section/15.png" alt="" />
+          <a href="#" class="col-span-2 sm:col-span-1">
+            <img
+              src="./assets/main/software-list-section/15.png"
+              alt="service-titan"
+            />
           </a>
         </div>
-        <p class="text-[#0F5265] font-bold text-xl leading-6">
+        <p class="text-[#0F5265] font-bold text-xl leading-6 py-5 mt-8 sm:mt-0">
           Don't see your software listed here?
         </p>
         <div class="my-12">
           <button class="btn-primary">Request an Integration</button>
         </div>
       </section>
-      <section class="bg-primary px-25 py-20">
+      <!-- Partners section  -->
+      <section class="bg-primary px-7 sm:px-10 lg:px-15 xl:px-25 py-20">
         <div class="text-center mb-20">
-          <h1 class="font-bold text-[2.5rem] leading-12 text-white">
+          <h1
+            class="font-bold text-2xl sm:text-[2.5rem] sm:leading-12 text-white"
+          >
             Hear from Our Partners
           </h1>
-          <p class="font-normal leading-7 text-white my-1 w-1/3 mx-auto">
+          <p
+            class="font-normal leading-7 text-white my-1 sm:1/2 md:w-2/3 xl:w-1/3 mx-auto"
+          >
             Success stories from leading law firms that have transformed their
             client interactions and lead management.
           </p>
         </div>
-        <div class="flex gap-x-10">
-          <div class="flex flex-col gap-5 justify-center w-1/2">
+        <div class="flex flex-col-reverse items-center xl:flex-row gap-12">
+          <div
+            class="flex flex-col gap-5 justify-center w-full md:w-2/3 lg:w-1/2"
+          >
             <p class="font-light text-lg leading-7 text-white">
               “Lorem ipsum dolor sit amet, consectet adipis cing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -636,29 +731,39 @@
               Speak to us
             </button>
           </div>
-          <div class="flex justify-end w-2/3">
-            <div class="h-105 w-35 overflow-hidden hover:flex-1">
+          <div
+            class="flex flex-col md:flex-row justify-center items-center gap-10 md:gap-0 xl:justify-end lg:w-5/6 xl:w-2/3"
+          >
+            <div
+              class="h-85 md:h-105 w-full sm:w-3/4 md:w-45 xl:w-35 overflow-hidden rounded-3xl md:rounded-none lg:hover:flex-1"
+            >
               <img
                 src="./assets/main/partners-section/partner-1.jpg"
                 alt=""
                 class="h-full w-full object-cover object-center"
               />
             </div>
-            <div class="h-105 w-35 overflow-hidden hover:flex-1">
+            <div
+              class="h-85 md:h-105 w-full sm:w-3/4 md:w-45 xl:w-35 overflow-hidden rounded-3xl md:rounded-none lg:hover:flex-1"
+            >
               <img
                 src="./assets/main/partners-section/partner-2.jpg"
                 alt=""
                 class="h-full w-full object-cover object-center"
               />
             </div>
-            <div class="h-105 w-35 overflow-hidden hover:flex-1">
+            <div
+              class="h-85 md:h-105 w-full sm:w-3/4 md:w-45 xl:w-35 overflow-hidden rounded-3xl md:rounded-none lg:hover:flex-1"
+            >
               <img
                 src="./assets/main/partners-section/partner-3.jpg"
                 alt=""
-                class="h-full w-full object-cover"
+                class="h-full w-full object-cover object-top"
               />
             </div>
-            <div class="h-105 w-35 overflow-hidden hover:flex-1">
+            <div
+              class="h-85 md:h-105 w-full sm:w-3/4 md:w-45 xl:w-35 overflow-hidden rounded-3xl md:rounded-none lg:hover:flex-1"
+            >
               <img
                 src="./assets/main/partners-section/partner-4.jpg"
                 alt=""
@@ -668,32 +773,37 @@
           </div>
         </div>
       </section>
-      <section class="flex justify-center gap-25 bg-[#F5D794] m-auto py-15">
+      <!-- Contact section  -->
+      <section
+        class="flex flex-col sm:flex-row justify-between gap-5 px-7 sm:px-10 lg:px-20 xl:px-30 bg-[#F5D794] m-auto py-15"
+      >
         <div>
-          <h1 class="font-bold text-[2rem] leading-12">
+          <h1 class="font-bold text-2xl sm:text-[2rem] leading-8 sm:leading-12">
             Upgrade your client conversations with Twinly.
           </h1>
-          <p class="font-normal text-base leading-7">
+          <p class="font-normal text-base leading-10">
             Affordable plans. Made for law firms.
           </p>
         </div>
-        <div class="pt-5">
+        <div class="pt-5 flex xl:flex-row flex-col gap-5">
           <button
-            class="rounded-lg bg-white mx-2 px-9 py-2 font-[Lato] cursor-pointer"
+            class="rounded-lg bg-white mx-2 px-5 py-2 font-[Lato] cursor-pointer w-42 xl:max-w-max h-10"
           >
             Contact Us
           </button>
           <button
-            class="rounded-lg bg-primary text-white mx-2 px-9 py-2 font-[Lato] cursor-pointer"
+            class="rounded-lg bg-primary text-white mx-2 px-5 py-2 font-[Lato] cursor-pointer w-42 xl:max-w-max h-10"
           >
             Schedule a Demo
           </button>
         </div>
       </section>
     </main>
-    <footer class="py-15 px-40 bg-primary">
-      <div class="flex justify-between mb-15">
-        <div class="flex flex-col gap-20 w-2/5">
+    <footer class="py-10 sm:py-15 px-7 sm:px-10 lg:px-20 xl:px-40 bg-primary">
+      <div
+        class="flex md:flex-row md:justify-between gap-20 flex-col mb-15 w-full"
+      >
+        <div class="flex flex-col gap-20 w-full sm:w-3/4 md:w-2/5">
           <div>
             <div class="flex gap-2">
               <img src="./assets/header/brand-logo.png" alt="Twinly logo" />
@@ -717,7 +827,7 @@
                   class="placeholder:text-white text-white outline-0 w-full"
                 />
                 <button
-                  class="rounded-[13px] bg-white text-sm px-8 py-2 font-[Lato] cursor-pointer"
+                  class="rounded-[13px] bg-white text-sm px-5 lg:px-8 py-2 font-[Lato] cursor-pointer"
                 >
                   Subscribe
                 </button>
@@ -725,21 +835,23 @@
             </form>
           </div>
         </div>
-        <div class="text-white">
-          <h3 class="font-bold">Top Links</h3>
-          <ul class="font-light text-sm mt-6 flex flex-col gap-3">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Partners</a></li>
-          </ul>
-        </div>
-        <div class="text-white">
-          <h3 class="font-bold">Support</h3>
-          <ul class="font-light text-sm mt-6 flex flex-col gap-3">
-            <li><a href="#">Terms & Conditions</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-          </ul>
+        <div class="flex flex-row justify-between w-full sm:w-3/4 md:w-2/5">
+          <div class="text-white">
+            <h3 class="font-bold">Top Links</h3>
+            <ul class="font-light text-sm mt-6 flex flex-col gap-3">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Partners</a></li>
+            </ul>
+          </div>
+          <div class="text-white">
+            <h3 class="font-bold">Support</h3>
+            <ul class="font-light text-sm mt-6 flex flex-col gap-3">
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
         </div>
       </div>
       <div>
